@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trả lời Khuyến mại Khách hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        #customer-feedback {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trả lời Khuyến mại Khách hàng</h1>
+    </header>
+    <container>
+        <div id="customer-feedback">
+            <h2>Khuyến mại từ Khách hàng</h2>
+            <p>
+                Khách hàng của bạn đã gửi phản hồi về khuyến mại. Dưới đây là nội dung phản hồi của họ:
+            </p>
+            <p>
+                [Nội dung phản hồi của khách hàng]
+            </p>
+            <h3>Trả lời của quản trị viên</h3>
+            <textarea id="admin-reply" rows="4" cols="50"></textarea>
+            <br>
+            <button>Gửi Trả lời</button>
+        </div>
+    </container>
+
+    <script>
+        function submitReply() {
+            var adminReply = document.getElementById("admin-reply").value;
+            // Ở đây bạn có thể thực hiện xử lý lưu trữ trả lời của quản trị viên và gửi nó đến khách hàng.
+            // Có thể sử dụng AJAX hoặc một loại server-side script để thực hiện điều này.
+        }
+    </script>
+</body>
+</html>
